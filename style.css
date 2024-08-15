@@ -1,0 +1,36 @@
+h2::before{
+    content: '';
+    width: 0px;
+    height: 2px;
+    position: absolute;  
+    bottom: 0;
+    right: 0;  
+    background-color: purple;
+    transition: .3s;
+}
+h2::after{
+    content:'';
+    width: 0px;
+    height: 2px;
+    position: absolute; 
+    left: 0;
+    top: 0;   
+    background-color: purple;
+    transition: .3s;
+}
+h2{
+    font-size: 30px;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    margin: 100px 100px;
+}
+h2:hover::before{
+    width: 100px;
+    height: 2px;
+}
+h2:hover::after{
+    width: 100px;
+    height: 2px;
+}
